@@ -6,13 +6,12 @@ import CryptoTable from '../components/CryptoTable'
 
 const Home = () => {
   return (
-    <div>
-        <div className="flex flex-col">
-            <div className = "flex flex-row">
+    <div className='flex items-center justify-center'>
+        <div className="">
+            <div className = "">
                 <BitcoinHalvingCountdown />
                 <FearGreedIndex />
             </div>
-
             <CryptoTable />
             <PaginationComponent />
         </div>
