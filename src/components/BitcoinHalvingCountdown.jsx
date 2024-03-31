@@ -33,7 +33,7 @@ function BitcoinHalvingCountdown() {
     <div>
       <div className="px-7 py-3 flex flex-col items-center">
         <p className="text-xl font-semibold">
-          <span className="text-yellow-400">Bitcoin</span> halving countdown
+          <span className="text-yellow-400">Bitcoin</span> Halving Countdown
         </p>
 
         <p className="text-white text-4xl font-bold">
