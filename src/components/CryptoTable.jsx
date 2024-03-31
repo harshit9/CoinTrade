@@ -43,7 +43,7 @@ const CryptoTable = () => {
   }
 
   return (
-    <table className='w-9/12 mb-20'>
+    <table className='w-9/12 mb-2'>
       <thead>
         <tr className='font-semibold'>
           <th className="px-4 py-2">#</th>

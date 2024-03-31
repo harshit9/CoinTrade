@@ -5,7 +5,17 @@ import axios from 'axios';
 const FearGreedIndex = () => {
 
   const url = 'https://api.alternative.me/fng/'
-  const [fng, setfng] = useState(0);
+  const [fng, setfng] = useState({
+    "name": "Fear and Greed Index",
+    "data": [
+      {
+        "value": "10",
+        "value_classification": "Greed",
+        "timestamp": "1711843200",
+        "time_until_update": "929"
+      }
+    ]
+  });
 
   useEffect(() => {
     const fetchData = async () => {
@@ -35,7 +45,7 @@ const FearGreedIndex = () => {
             arcWidth={0.15}
             arcsLength={[0.25, 0.25, 0.25, 0.25]}
             colors={['#D22B2B', '#ff8c1a', '#0096FF','#0047AB']}
-            percent={0.37}
+            percent={fng.data[0].value*0.01}
             arcPadding={0}
             formatTextValue={(string) => string}
             hideText={true}
