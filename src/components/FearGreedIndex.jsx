@@ -36,7 +36,7 @@ const FearGreedIndex = () => {
         <div className="pl-7 pt-3 pb-1 flex justify-around">
           <p className="text-lg font-semibold"><span className="text-blue-500">
           Fear</span> & <span className="text-red-600">Greed</span> Index:<br/>
-          <span className='text-4xl'>{fng.data[0].value} </span>
+          <span className='text-4xl font-bold'>{fng.data[0].value} </span>
           <span className='text-base font-light text-white/[0.90]'>({fng.data[0].value_classification}) </span>
           
           </p>
