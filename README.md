@@ -1,6 +1,8 @@
 # coinTrade
 
 coinTrade is a sleek and intuitive cryptocurrency tracker built with Vite, React.js, and Tailwind CSS. Seamlessly integrating with CoinGecko's API, it provides real-time updates on cryptocurrency prices and detailed information.
+![image](https://github.com/harshit9/CoinTrade/assets/29008491/1ac1addd-99e5-4997-b2f2-b23371954faf)
+
 
 ## Getting Started
 
