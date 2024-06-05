@@ -1,6 +1,5 @@
 import BitcoinHalvingCountdown from '../components/BitcoinHalvingCountdown'
 import FearGreedIndex from '../components/FearGreedIndex'
-import PaginationComponent from '../components/PaginationComponent'
 import CryptoTable from '../components/CryptoTable'
 
 
@@ -17,7 +16,6 @@ const Home = () => {
                 </div>
             </div>
             <CryptoTable />
-            <PaginationComponent />
         </div>
     </div>
   )

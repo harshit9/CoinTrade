@@ -12,7 +12,7 @@ function App() {
         <NavBar2 />
           <Routes>
             <Route exact path="/" element=<Home/> />
-            <Route path="/crypto/:id" element=<CoinPage/> />
+            <Route path="/crypto/:id/:symbol" element=<CoinPage/> />
           </Routes>
       </div>
   )

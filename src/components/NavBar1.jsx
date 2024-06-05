@@ -9,7 +9,7 @@ const NavBar1 = () => {
                     pt-1 pb-2 text-[18px]">
 
       <div className="flex gap-20 col-span-8 ml-10 items-center font-bold">
-        <p className="text-blue-400 text-2xl mr-10">CoinTrade</p>
+        <p className="text-blue-400 text-2xl mr-10"><Link to = "/">CoinTrade</Link></p>
         <div><Link to = "/Trending">Trending</Link></div>
         <div><Link to = "/Heatmap">Heatmap</Link></div>
         <div><Link to = "/Watchlist">Watchlist</Link></div>
