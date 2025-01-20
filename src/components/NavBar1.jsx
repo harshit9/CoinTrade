@@ -6,7 +6,7 @@ const NavBar1 = () => {
   return (
     <div className="flex items-center justify-between 
                     border-b-[0.69px] border-white/[0.90] 
-                    pt-1 pb-2 text-[18px]">
+                    pt-1 pb-2 text-[18px] ">
 
       <div className="flex gap-20 col-span-8 ml-10 items-center font-bold">
         <p className="text-blue-400 text-2xl mr-10"><Link to = "/">CoinTrade</Link></p>
@@ -16,7 +16,7 @@ const NavBar1 = () => {
       </div>
       
 
-      <div className="flex gap-10">
+      <div className="hidden gap-10 md:flex">
         <div>
           <label htmlFor="dropdown">Currency :</label>
           <select id="dropdown" className="bg-inherit"> 

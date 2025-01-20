@@ -1,12 +1,12 @@
 import { useParams } from "react-router-dom"
 import axios from 'axios';
 import { useEffect, useState } from "react";
-
-
+import TradingViewWidget from "../components/TradingViewWidget"
 
 const CoinPage = () => {
 
   const { id } = useParams();
+  const { symbol } = useParams();
 
   const url = `https://api.coingecko.com/api/v3/coins/${id}?localization=false&tickers=false&market_data=true&community_data=false&developer_data=true`;
 
@@ -41,8 +41,11 @@ const CoinPage = () => {
         <h1 className='text-2xl my-2 capitalize font-bold'>{coinData.name}</h1>
       </div>
       <p className='mt-6 text-gray-500 [&>a]:text-blue-600 [&>a]:underline' dangerouslySetInnerHTML={{ __html: coinData.description.en }}></p>
+
+      <div className=" flex h-80 py-4"><TradingViewWidget symbol={symbol} /></div>
+      
     </div>
   )
-}
+};
 
 export default CoinPage

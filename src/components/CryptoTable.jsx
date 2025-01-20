@@ -56,8 +56,8 @@ const CryptoTable = () => {
   }
 
   return (
-    
-    <div className='w-9/12 overflow-auto'>
+    <div className='w-9/12'>
+    <div className='overflow-auto'>
       <table className='w-full'>
         <thead className='bg-[#1F2D37]/[0.5] border-b-[0.5px] border-white/[0.85]'>
           <tr className='text-center text-sm'>
@@ -108,6 +108,7 @@ const CryptoTable = () => {
           ))}
         </tbody>
       </table>
+      </div>
 
       <div className="flex justify-center items-center mt-5 mb-10">
         <button
@@ -142,6 +143,7 @@ const CryptoTable = () => {
           Last {'>>'}
         </button>
       </div>
+
     </div>
   );
 }
